@@ -1,4 +1,6 @@
 1.What tags are used to surround PHP code?
+    
+    <?php ?>
 
 2.What extension should a PHP file have?
 
