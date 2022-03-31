@@ -1,0 +1,19 @@
+1.What tags are used to surround PHP code?
+
+2.What extension should a PHP file have?
+
+3.What is the command to start PHP’s built-in server from any folder?
+
+4.Name two PHP functions/language-constructs that can be used to output data to be sent to the browser?
+
+5.What’s the difference between using single quotes and double quotes for a string?
+
+6.There are three ways to write comment in PHP scripts. What are they?
+
+7.What character must be the first character in any variable name? What characters can be the second character in any variable name? What characters can be the third and higher character in any variable name?
+
+8.Are variable names case sensitive or case-insensitive in PHP?
+
+9.The string concatenation operator in Javascript is the + sign. What is the concatenation operator in PHP?
+
+10.How do you define a constant in PHP? What are the differences between a constant and a variable?
