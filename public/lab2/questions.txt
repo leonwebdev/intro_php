@@ -12,6 +12,8 @@
 
 4.Name two PHP functions/language-constructs that can be used to output data to be sent to the browser?
 
+    echo, print
+
 5.What’s the difference between using single quotes and double quotes for a string?
 
 6.There are three ways to write comment in PHP scripts. What are they?
