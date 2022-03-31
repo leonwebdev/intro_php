@@ -33,6 +33,10 @@
 
 8.Are variable names case sensitive or case-insensitive in PHP?
 
+    Case-sensitive.
+
 9.The string concatenation operator in Javascript is the + sign. What is the concatenation operator in PHP?
+
+
 
 10.How do you define a constant in PHP? What are the differences between a constant and a variable?
