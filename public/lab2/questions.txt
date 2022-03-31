@@ -8,6 +8,8 @@
 
 3.What is the command to start PHP’s built-in server from any folder?
 
+    php -S localhost:8000
+
 4.Name two PHP functions/language-constructs that can be used to output data to be sent to the browser?
 
 5.What’s the difference between using single quotes and double quotes for a string?
