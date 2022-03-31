@@ -40,3 +40,9 @@
     A dot.
 
 10.How do you define a constant in PHP? What are the differences between a constant and a variable?
+
+    (1)<?php
+        define('KEY', 'value');
+        ?>
+    (2)The constant is immutable, once their values are set, it cannot change.
+       The variable is mutable, the value of variables can change.
