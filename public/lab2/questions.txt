@@ -16,6 +16,9 @@
 
 5.What’s the difference between using single quotes and double quotes for a string?
 
+    Single quotes: the string will be the exactly what it contains, the variables will be regarded as texts.
+    Double quotes: the variables will be interpreted into its own value.
+
 6.There are three ways to write comment in PHP scripts. What are they?
 
 7.What character must be the first character in any variable name? What characters can be the second character in any variable name? What characters can be the third and higher character in any variable name?
