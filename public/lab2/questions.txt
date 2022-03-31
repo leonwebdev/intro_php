@@ -37,6 +37,6 @@
 
 9.The string concatenation operator in Javascript is the + sign. What is the concatenation operator in PHP?
 
-
+    A dot.
 
 10.How do you define a constant in PHP? What are the differences between a constant and a variable?
