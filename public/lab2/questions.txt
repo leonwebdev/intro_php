@@ -21,6 +21,10 @@
 
 6.There are three ways to write comment in PHP scripts. What are they?
 
+    (1)Multiline/Inline comment : /* comment here */
+    (2)Singleline comment : // comment here
+    (3)Bash/C style single line comment : # comment here
+
 7.What character must be the first character in any variable name? What characters can be the second character in any variable name? What characters can be the third and higher character in any variable name?
 
 8.Are variable names case sensitive or case-insensitive in PHP?
