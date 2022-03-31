@@ -4,6 +4,8 @@
 
 2.What extension should a PHP file have?
 
+    php
+
 3.What is the command to start PHP’s built-in server from any folder?
 
 4.Name two PHP functions/language-constructs that can be used to output data to be sent to the browser?
