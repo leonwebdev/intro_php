@@ -1,4 +1,12 @@
+<?php
 
+include __DIR__ . '/../includes/functions.php';
+
+$title = "Home";
+
+include __DIR__ . '/../includes/header.inc.php';
+
+?>
   
   <section id="feature_slide">
     

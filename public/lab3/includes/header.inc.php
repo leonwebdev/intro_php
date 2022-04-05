@@ -90,17 +90,17 @@
   <header>
     
     <div id="header_wrapper" class="main_wrapper">
-      <a target="_blank" href="./index.html" title="Gardener Home">
+      <a href="./index.php" title="Gardener Home">
       <img src="./images/logo.svg" alt="logo" width="315" height="70">
       </a>
       <nav>
         
         <ul id="navlist">
-          <li><a href="./index.html" title="Gardener Home">Home</a></li>
-          <li><a href="./mine.html" title="Gardener Mine tells you items you owns">Mine</a></li>
-          <li><a href="./timeline.html" title="Gardener Timeline shows your tracking of your plants">Timeline</a></li>
-          <li><a href="./community.html" title="Gardener Community shows what other people is doing">Community</a></li>
-          <li><a href="./newsletter.html" title="Click and subscribe our newsletter weekly">Newsletter</a></li>
+          <li><a href="./index.php" title="Gardener Home">Home</a></li>
+          <li><a href="./mine.php" title="Gardener Mine tells you items you owns">Mine</a></li>
+          <li><a href="./timeline.php" title="Gardener Timeline shows your tracking of your plants">Timeline</a></li>
+          <li><a href="./community.php" title="Gardener Community shows what other people is doing">Community</a></li>
+          <li><a href="./newsletter.php" title="Click and subscribe our newsletter weekly">Newsletter</a></li>
         </ul>
         
       </nav>
