@@ -48,10 +48,42 @@ if(empty($_GET['book_id'])) {
 
     $results = $stmt->fetchAll();
 
-
-    echo '<pre>';
-    print_r($results);
-    echo '</pre>';
-    die;
-
+    // echo '<pre>';
+    // print_r($results);
+    // echo '</pre>';
+    // die;
+    $title .= ": {$results[0]['title']}";
 }
+
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?=e($title)?></title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #cfcfcf;
+            padding: 1em;
+        }
+        th{
+            background: #333;
+            color: #fff;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<h1><?=e($title)?></h1>
+<img src="images/covers/<?=e($results[0]['image'])?>" alt="img">
+
+<ul>
+    <?php foreach ($results[0] as $key => $value) :?>
+        <li><strong><?=e($key)?></strong>: <?=e($value)?></li>
+    <?php endforeach; ?>
+</ul>
