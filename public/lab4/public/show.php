@@ -1,3 +1,6 @@
 <?php
 
-// use this file for your detail controller
+require __DIR__ . '/../includes/connect.php';
+require __DIR__ . '/../includes/functions.php';
+
+$title = 'Detail';
