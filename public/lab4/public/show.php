@@ -84,6 +84,6 @@ if(empty($_GET['book_id'])) {
 
 <ul>
     <?php foreach ($results[0] as $key => $value) :?>
-        <li><strong><?=e($key)?></strong>: <?=e($value)?></li>
+        <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <?=e($value)?></li>
     <?php endforeach; ?>
 </ul>
