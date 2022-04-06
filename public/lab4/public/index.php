@@ -9,11 +9,11 @@ $query = "SELECT
             book.id as book_id,
             book.in_print as book_in_print,
             book.title,
-            book.price,
             author.name as author,
             genre.name as genre,
             format.name as format,
-            publisher.name as publisher
+            publisher.name as publisher,
+            book.price
             FROM 
             book
             INNER JOIN author ON book.author_id = author.id
@@ -26,9 +26,9 @@ $stmt = $dbh->query($query);
 
 $results = $stmt->fetchAll();
 
-echo '<pre>';
-print_r($results);
-echo '</pre>';
+// echo '<pre>';
+// print_r($results);
+// echo '</pre>';
 // die;
 
 ?><!DOCTYPE html>
@@ -44,7 +44,12 @@ echo '</pre>';
         }
         th, td {
             border: 1px solid #cfcfcf;
-            padding: 6px;
+            padding: 1em;
+        }
+        th{
+            background: #333;
+            color: #fff;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -56,7 +61,7 @@ echo '</pre>';
     <tr>
     <?php foreach($results[0] as $key => $value) : ?>
         <?php if($key!='book_id' && $key!='book_in_print') :?>
-        <th><?=e(ucwords($key))?></th>
+            <th><?=e(ucwords($key))?></th>
         <?php endif; ?>
     <?php endforeach; ?>
     </tr>
@@ -64,11 +69,15 @@ echo '</pre>';
     
     <?php foreach($results as $row) : ?>
     <tr>
-        <td><?=e($row['title'])?></td>
-        <td><?=e($row['auth'])?></td>
-        <td><?=e($row['last_name'])?></td>
-        <td><?=e($row['email'])?></td>
-        <td><a href="01_dynamic_query.php?id=<?=e($row['id'])?>">view</a></td>
+        <?php foreach($row as $key => $value) : ?>
+            <?php if($row['book_in_print']==1 && $key!='book_id' && $key!='book_in_print') :?>
+                <?php if($key=='title'): ?>
+                        <td><a href="show.php?book_id=<?=e($row['book_id'])?>"><?=e($value)?></a></td>
+                    <?php else: ?>
+                        <td><?=e($value)?></td>
+                <?php endif; ?>
+            <?php endif; ?>
+        <?php endforeach; ?>
     </tr>
     <?php endforeach; ?>
     
