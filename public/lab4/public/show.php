@@ -84,6 +84,8 @@ if(empty($_GET['book_id'])) {
 
 <ul>
     <?php foreach ($results[0] as $key => $value) :?>
-        <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <?=e($value)?></li>
+        <?php if($key != 'book_id' && $key != 'image' ) :?>
+            <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <?=e($value)?></li>
+        <?php endif; ?>
     <?php endforeach; ?>
 </ul>
