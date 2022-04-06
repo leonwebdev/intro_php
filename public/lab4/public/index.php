@@ -7,7 +7,7 @@ $title = 'Books';
 
 $query = "SELECT 
             book.id as book_id,
-            book.in_print as book_in_print,
+            book.in_print,
             book.title,
             author.name as author,
             genre.name as genre,
@@ -60,7 +60,7 @@ $results = $stmt->fetchAll();
 <table>
     <tr>
     <?php foreach($results[0] as $key => $value) : ?>
-        <?php if($key!='book_id' && $key!='book_in_print') :?>
+        <?php if($key!='book_id' && $key!='in_print') :?>
             <th><?=e(ucwords($key))?></th>
         <?php endif; ?>
     <?php endforeach; ?>
@@ -70,7 +70,7 @@ $results = $stmt->fetchAll();
     <?php foreach($results as $row) : ?>
     <tr>
         <?php foreach($row as $key => $value) : ?>
-            <?php if($row['book_in_print']==1 && $key!='book_id' && $key!='book_in_print') :?>
+            <?php if($row['in_print']==1 && $key!='book_id' && $key!='in_print') :?>
                 <?php if($key=='title'): ?>
                         <td><a href="show.php?book_id=<?=e($row['book_id'])?>"><?=e($value)?></a></td>
                     <?php else: ?>
