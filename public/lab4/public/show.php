@@ -87,6 +87,8 @@ if(empty($_GET['book_id'])) {
         <?php if($key != 'book_id' && $key != 'image') :?>
             <?php if($key == 'description') :?>
                     <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <p><?=e(strip_tags($value))?></p></li>
+                <?php elseif($key == 'in_print') :?>
+                    <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <?=e('Yes')?></li>
                 <?php else :?>
                     <li><strong><?=e(ucwords( str_replace('_', ' ', $key) ))?></strong>: <?=e(strip_tags($value))?></li>
             <?php endif; ?>
