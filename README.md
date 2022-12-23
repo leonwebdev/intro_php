@@ -1,6 +1,6 @@
 # Intro PHP
 
-* Lihang Yao 
+* L Y
 
 * <yao-l@webmail.uwinnipeg.ca>
 
